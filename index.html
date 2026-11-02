@@ -61,7 +61,7 @@ footer .note{margin:0; color:var(--muted); font-size:14px}
 h2{color:#404040;text-transform:uppercase;letter-spacing:.18em;font-size:12px}
 .card{background:#ffffffd9;border:1px solid #e4e4e4;border-radius:6px;padding:20px;backdrop-filter:blur(8px);box-shadow:0 2px 5px rgba(0,0,0,.07)}
 body::before{content:'';display:block;height:5px;background:#404040;position:sticky;top:0;z-index:9}
-body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background-image:radial-gradient(#e4e4e4 1px, transparent 1px);background-size:22px 22px}
+background-image:radial-gradient(#e4e4e4 1px, transparent 1px);background-size:22px 22px;
 </style>
 </head>
 <body>
@@ -76,7 +76,7 @@ body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;back
 
 <section class="about" id="about">
   <h2>关于</h2>
-  <p>我关注奖励模型的过拟合，因为它直接影响结论可不可信。 当前以硕士阶段研究角色的方式推进项目。</p>
+  <p>我关注奖励模型的过拟合，因为它直接影响结论可不可信。</p>
   <ul class="traits">
     <li>先给定位手段，再给处置手段。</li>
     <li>每个命令都写清会在什么情况下失败。</li>
@@ -89,20 +89,12 @@ body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;back
   <div class="grid two">
     <article class="card">
       <h3>奖励模型的过拟合在不同数据分布下的稳健性</h3>
-      <span class="status">持续跟进</span>
     </article>
     <article class="card">
       <h3>奖励模型的过拟合的判定依据与复核方式</h3>
-      <span class="status">持续跟进</span>
     </article>
     <article class="card">
       <h3>奖励模型的过拟合里容易误判的情形与反例</h3>
-      <span class="status">持续跟进</span>
-    </article>
-    <article class="card">
-      <h3>在推进的问题</h3>
-      <p>（奖励模型的过拟合场景）要让奖励模型的过拟合在分布变化下不退化，需要满足什么条件？用口径一致性比对验证并报告退化幅度。</p>
-      <span class="status">进行中</span>
     </article>
   </div>
 </section>
@@ -110,9 +102,6 @@ body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;back
 <section id="work">
   <h2>开源</h2>
   <ul class="repos">
-    <li><div class="name"><a href="https://github.com/springnier/consistency_trace_based_analysis_141928e7" rel="noopener">consistency_trace_based_analysis_141928e7</a></div>
-      <div class="desc">（奖励模型的过拟合场景）要让奖励模型的过拟合在分布变化下不退化，需要满足什么条件？用口径一致性比对验证并报告退化幅度。</div>
-    </li>
     <li><div class="name"><a href="https://github.com/springnier/rmoverfit" rel="noopener">rmoverfit</a></div>
       <div class="desc">在同一个输入里两两比对，检测奖励模型的过拟合相关的矛盾表述，把冲突双方原样并排呈现</div>
     </li>
